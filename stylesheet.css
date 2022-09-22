@@ -181,17 +181,6 @@ img {
     color: white;  
 }
 
-.menu1 {
-    justify-content: center;              
-    width: calc(100vw - padding);
-    background-color: rgba(70, 70, 70, 0.8);
-    font-family: 'Poppins', sans-serif;   
-    position: fixed;  
-    border: 1px solid black; 
-    padding: 1.2em;               
-    color: white;  
-}
-
 .registro {
     flex-shrink: 4;
 }
@@ -238,7 +227,19 @@ p {
     background-color: #141414;
     font-family: 'Poppins', sans-serif;
     color: white;   
-    position: fixed;     
+    position: fixed;   
+    margin-bottom: 5%;  
+  }
+
+  .menu1 {
+    display: flex;
+    justify-content: center;              
+    width: 100%;
+    background-color: #141414;
+    font-family: 'Poppins', sans-serif;
+    color: white;   
+    position: fixed;   
+    margin-bottom: 5%;  
   }
 
   
