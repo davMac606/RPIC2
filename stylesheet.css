@@ -1,0 +1,290 @@
+.button {
+    background-color: rgb(0, 0, 0);
+    border: 1 solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    left: 0;
+
+}
+
+.button:hover {
+    transform: scale(1.5, 1.5);
+}
+
+#wanna {
+    animation: animationWanna 2s;
+    
+}
+#wanna:hover {
+    @keyframes animationWanna {
+        from {
+            opacity: 0;
+        } to {
+            opacity: 1;
+        }
+    }
+}
+
+.box2 {
+    margin: 0 auto;
+    border: 25px solid black;
+    background-color: rgba(70, 70, 70, 0.8);
+    color: white;
+    width: 100%;
+    z-index: 5;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu a:link {
+    text-decoration: none;
+  }
+
+  .menu span {
+    margin-right: 1.2em;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  section {
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem;      
+    text-align: justify;         
+  }
+
+  @media (min-width: 320px) and (max-width: 480px)  {
+    .menu {
+      flex-direction: column;  
+      font-size: 0.3em;
+    }
+
+    section {
+      background-color: pink;
+      font-size: 0.3em;
+    }            
+  }   
+
+  @media (min-width: 481px) and (max-width: 767px)  {
+    .menu {
+      flex-direction: column;  
+      font-size: 0.7em;
+    }
+
+    section {
+      background-color: lightblue;
+      font-size: 0.7em; 
+    }            
+  }      
+  @media (min-width: 768px) and (max-width: 1024px)  {
+    .menu {
+      flex-direction: row;  
+      font-size: 0.8em;
+    }
+
+    section {
+      background-color: lightgreen;
+      font-size: 0.8em;       
+    }        
+  }         
+
+  @media print {
+      body {
+        background-color: white;            
+      }
+
+      .menu {
+          display: none;
+      }
+  }  
+
+  @media speech {
+      .menu {
+          display: none;
+      }
+
+      #teste {
+          display: block;
+      }
+  }  
+
+nav {
+    width: 97.5vw;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    color: red;
+}
+
+.order1 {
+    order: 1;
+}
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 93px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 70, 70, 0.8);
+    border: 1px solid black;
+    z-index: 4;
+    font-family: 'Arial', Arial, serif;
+}
+
+.registro {
+    flex-shrink: 0;
+}
+.login {
+    flex-shrink: 1;
+}
+.usopessoal {
+    flex-shrink: 3;
+}
+.usoempresas {
+    flex-shrink: 3;
+}
+.instalacao {
+    flex-shrink: 4;
+}
+.about {
+    flex-shrink: 0;
+}
+
+#container {
+    width: calc(100vw - padding);
+    padding: 1,5px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    background-color: rgba(70, 70, 70, 0.8);
+    border: 1px solid black;
+}
+
+p {
+    font-family: 'Arial', Arial, serif;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.2em;               
+    width: calc(100vw - padding);
+    background-color: #141414;
+    font-family: 'Poppins', sans-serif;
+    color: white;        
+  }
+
+body {
+    background-color: rgb(121, 118, 118);
+    width: 96%;
+    height: 99%;
+    background-size: cover;
+    font-size: 20px;
+    background-attachment: fixed;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-right: 0;
+}
+
+
+.box1 {
+    margin: 0;
+    margin-right: 0;
+    border: 25px solid black;
+    background-color: rgba(70, 70, 70, 0.8);
+    color: white;
+    width: 100%;
+    z-index: 5;
+    padding: 2px;
+}
+
+#boxTabela {
+    border: 25px solid black;
+    background-color: white;
+    color: black;
+    z-index: 5;
+    width: 100%;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid red;
+}
+
+#container1 {
+    width: 1850px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 70, 70, 0.8);
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+a {
+    color: red;
+}
+
+#atalhos {
+    justify-content: right;
+    align-items: right;
+}
+
+
+hr {
+    width: 1850px;
+}
+
+#sumario {
+    font-size: 20px;
+}
+
+#aviso {
+    color: red;
+}
