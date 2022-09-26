@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="logoCotil.png" type="image/icon type">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <title>Site Projeto: Registro</title>
+
+    <script>
+
+
+        function addTable() {
+            var table = document.getElementById('tabelaDados');
+            var row = table.insertRow(1);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            cell1.innerHTML = document.getElementById('nomeComp').value;
+            cell2.innerHTML = document.getElementById('nasc').value;
+            cell3.innerHTML = document.getElementById('username').value;
+            cell4.innerHTML = document.getElementById('senha').value;
+        }
+
+        function limpaImput() {
+            document.getElementById('nomeComp').value = null;
+            document.getElementById('nasc').value = null;
+            document.getElementById('username').value = null;
+            document.getElementById('senha').value = null;
+
+        }
+
+        function valida() {
+            if (document.getElementById('nomeComp').value = null) {
+                alert("O valor não pode ser vazio.");
+            }
+
+        }
+
+        function geraId() {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+            function generateString(length) {
+                let result = ' ';
+                const charactersLength = characters.length;
+                for (let i = 0; i < length; i++) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                }
+                return result;
+            }
+
+
+            document.getElementById('mostraId').innerHTML = "Registro efetuado com sucesso! Seu id é " + generateString(10);
+            cell5.innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="index.html">
+            <button class="button" accesskey="h">Home</button>
+        </a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box2">
+        <section>
+
+            <form>
+                <label for="nomeComp">Nome</label><br>
+                <input type="text" name="nomeComp" id="nomeComp" required tabindex="1"><br><br>
+
+                <label for="nasc">Data de nascimento</label><br>
+                <input type="date" name="nasc" id="nasc" required tabindex="2"><br><br>
+
+
+                <input type="text" name="username" id="username" placeholder="Nome de usuário" required
+                    tabindex="3"><br><br>
+
+
+                <input type="password" name="senha" id="senha" placeholder="Senha" required tabindex="4"><br><br>
+
+
+                <input type="radio" name="remind" id="remind" tabindex="5">
+                <label for="remind">Lembrar de mim</label><br><br>
+
+                <input class="button" type="submit" id="enviar" onclick=play();addTable();><br><br>
+
+                <div id="imagem">
+                    <label for="foto">Foto 3x4(Opcional)</label><br>
+
+                    <input type="file" name="foto" id="foto" tabindex="6"><br><br>
+
+            </form>
+        </section>
+ </div>
+          
+    <footer>
+        <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
+        <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+    </footer>
+    
+    </div>
+
+    </div>
+</body>
+
+</html>
