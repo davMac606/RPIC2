@@ -212,7 +212,7 @@ p {
     font-family: 'Poppins', sans-serif;
     color: white;   
     position: fixed;   
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
   }
 
   footer {
@@ -226,6 +226,9 @@ p {
     bottom: 0; 
   }
 
+  table {
+    margin-left: 50px;
+  }
 
   
 

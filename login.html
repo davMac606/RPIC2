@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>RPIC</title>
     <link rel="icon" href="logoCotil.png" type="image/icon type">
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <title>Site Projeto: Login</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         function addTable() {
             var table = document.getElementById('tabelaDados');
@@ -30,39 +29,44 @@
 </head>
 
 <body>
-    <div id="container1">
-        <a href="index.html">
-            <button class="button" accesskey="h">Home</button>
-        </a>
-    </div>
-    <hr>
-    <div class="box1">
+    <nav class="menu">
+        <a href="sobre.html"><button class="button about" type="button" accesskey="a">Sobre nós</button></a>
+        <a href=#usoPessoal><button class="button usopessoal" type="button" accesskey="p">Instalação: Uso
+                Pessoal</button></a>
+        <a href=#usoEmpresas><button class="button usoempresas" type="button" accesskey="u">Instalação: Uso
+                Empresarial</button></a>
+        <a href=#instalacao><button class="button instalacao" type="button" accesskey="s">Sobre a
+                instalação</button></a>
+        <a href="registro.html"><button class="button registro" type="button" accesskey="r">Registre-se</button></a>
+        <a href="login.html"><button class="button login" type="button" accesskey="l">Login</button></a>
+        <a href="index.html"><button class="button login" type="button" accesskey="h">Home</button></a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box2">
         <h1>Bem-vindo ao Login do RPIC!</h1>
+        <section>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Nome de usuário" required><br><br>
 
-        <form>
-            <input type="text" name="username" id="username" placeholder="Nome de usuário" required><br><br>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required><br><br>
 
-            <input type="password" name="senha" id="senha" placeholder="Senha" required><br><br>
+                <input type="radio" name="remind" id="remind">
+                <label for="remind">Lembrar de mim</label><br><br>
 
-            <input type="radio" name="remind" id="remind">
-            <label for="remind">Lembrar de mim</label><br><br>
-
-        </form>
-
-        <table id="tabelaDados" border=1>
-            <tr>
-                <th>Nome de usuário</th>
-                <th>Senha</th>
-            </tr>
-
-
+            </form>
+        </section>
     </div>
 
-    <button class="button" onclick=addTable();limpaImput();>Adicionar dados à tabela</button>
+    <input type="submit" class="button" placeholder="Cadastrar">
 
     <footer>
         <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
         <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
+        <a href=#index.html><button class="button" type="button" accesskey="t">Retornar ao topo</button></a>
     </footer>
 </body>
 
