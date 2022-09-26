@@ -103,14 +103,30 @@
                     <input type="file" name="foto" id="foto" tabindex="6"><br><br>
 
             </form>
+
+            <div class="boxTable">
+                <table id="tabelaDados" border=1>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data Nascimento</th>
+                        <th>Username</th>
+                        <th>Senha</th>
+                    </tr>
+                </table>
+               
+            </div>
+             <p id="mostraId"></p>
         </section>
- </div>
-          
+        <button class="button" onclick=addTable();limpaImput();valida();geraId(); tabindex="8">Adicionar dados à
+            tabela</button>
+    </div>
+
+
     <footer>
         <a href="mailto:cl201238@g.unicamp.br"><button class="button" type="button">E-mail</button></a>
         <a href="tel:19991608205"><button class="button" type="button">Telefone</button></a>
     </footer>
-    
+
     </div>
 
     </div>
