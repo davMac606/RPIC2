@@ -93,7 +93,8 @@ p {
   }
 
   section {
-    background-color: pink;
+    background-color: black;
+    color: white;
     font-size: 0.3em;
   }
 }
@@ -253,11 +254,17 @@ input:hover {
 }
 
 .boxTable {
-  box-shadow: 20px 15px 0px black;
+  box-shadow: 15px 15px 5px black;
+  background-color: #141414;
 }
 
 table {
   border: 5px solid black;
+}
+
+th {
+  background-color: #141414;
+  color: white;
 }
 
 body {
