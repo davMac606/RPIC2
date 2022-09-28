@@ -106,8 +106,14 @@ p {
   }
 
   section {
-    background-color: lightblue;
+    background-color: white;
     font-size: 0.7em;
+    color: black;
+  }
+
+  .box2 {
+    background-color: white;
+    color: black;
   }
 }
 
@@ -118,8 +124,9 @@ p {
   }
 
   section {
-    background-color: lightgreen;
+    background-color: lightblue;
     font-size: 0.8em;
+    color: black;
   }
 }
 
@@ -219,9 +226,16 @@ p {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1.2em;
   width: 100%;
   background-color: #141414;
