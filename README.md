@@ -1,3 +1,4 @@
 ## Localização de propriedades CSS
 
-[Main Code](https://github.com/davMac606/RPIC2/blob/main/index.html)
+Todas as páginas têm: Pseudo-classes(nos botões), gradientes(no background) e flexbox(em containers)
+[Home Page](https://github.com/davMac606/RPIC2/blob/main/index.html)
