@@ -5,9 +5,9 @@ Todas as páginas têm: Pseudo-classes(nos botões), gradientes(no background), 
 [CSS Page](https://github.com/davMac606/RPIC2/blob/main/stylesheet.css)
 =======
 
-***Registro:***
+*Registro:*
 Formatação de formulário, box-shadow.
 =======
 
-***Login:***
+*Login:*
 Formatação de formulário, box-shadow, animação.
