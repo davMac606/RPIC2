@@ -6,6 +6,6 @@ Todas as páginas têm: Pseudo-classes(nos botões), gradientes(no background), 
 
 *Registro:*
 Formatação de formulário, box-shadow.
- 
+  
 *Login:*
 Formatação de formulário, box-shadow, animação.
